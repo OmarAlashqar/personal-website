@@ -1,0 +1,19 @@
+body{
+  background-color: honeydew;
+  padding-top: 50px;
+}
+
+h1{
+  color: lightseagreen;
+  font-size: 50px;
+  text-align: center;
+}
+
+img.spotlight{
+  display: block;
+  margin: auto;
+}
+
+.blob{
+
+}
