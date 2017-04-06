@@ -1,3 +1,5 @@
+/*font-family: 'Quicksand', sans-serif;*/
+
 body{
   background-color: #E4DDD1;
   padding: 0;
@@ -15,6 +17,8 @@ h1{
   color: #75BFB9;
   font-size: 50px;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 50px;
 }
 
 img.portrait{
