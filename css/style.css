@@ -1,19 +1,28 @@
 body{
-  background-image: url("../images/highlight.png");
+  background-color: #E4DDD1;
   padding: 0;
   margin: 0;
 }
 
+.headerWrapper{
+  background-image: url("../images/highlight.png");
+  width: 100%;
+  height: 200px;
+  margin: 0;
+}
+
 h1{
-  color: #91C46C;
+  color: #75BFB9;
   font-size: 50px;
   text-align: center;
 }
 
-img.spotlight{
+img.portrait{
   width: 250px;
-  margin: 100px auto 0;
+  margin: auto;
   display: block;
+  border-radius: 500px;
+  margin-top: -125px;
 }
 
 img.icon{

@@ -1,0 +1,94 @@
+.container{
+  margin: auto;
+  margin-top: 50px;
+  padding: 5px;
+  background-color: white;
+}
+
+.circle{
+  background-color: #75BFB9;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.red-hover{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+
+  border: 5px solid transparent;
+  border-top-color: #365658;
+
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: -5px;
+
+  animation: spinny 2s linear infinite;
+}
+
+.orange-hover{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: 10px solid transparent;
+  border-top-color:#A99087;
+
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: -10px;
+
+  animation: spinny2 3s linear infinite;
+}
+
+.ping{
+  background-color: #A99087;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+
+  animation: ping 1s ease-in-out infinite;
+}
+
+@keyframes spinny{
+  0%{
+    transform: rotate(360deg) scale(1);
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes spinny2{
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes ping{
+  0%{
+    transform:scale(1);
+    opacity: 0.8;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
