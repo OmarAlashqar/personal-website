@@ -8,6 +8,7 @@
   <!-- Scripts -->
   <script src="scripts/bootstrap.min.js"></script>
   <script src="scripts/jquery-3.1.1.min.js"></script>
+  <script src="scripts/modal.js"></script>
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicons/favicon.ico">
@@ -34,47 +35,87 @@
 
   <div class="showcase">
     <div class="gallery">
-      <a target="_blank" href="images/gallery/swo.png">
-        <img src="images/gallery/swo.png" alt="Fjords" width="300" height="200">
-      </a>
+      <img src="images/gallery/swo.png" onclick="openModal();currentSlide(1)">
     </div>
 
     <div class="gallery">
-      <a target="_blank" href="images/gallery/tentrils.png">
-        <img src="images/gallery/tentrils.png" alt="Northern Lights" width="300" height="200">
-      </a>
+      <img src="images/gallery/tentrils.png" onclick="openModal();currentSlide(2)">
     </div>
 
     <div class="gallery">
-      <a target="_blank" href="images/gallery/drip.png">
-        <img src="images/gallery/drip.png" alt="Northern Lights" width="300" height="200">
-      </a>
+      <img src="images/gallery/drip.png" onclick="openModal();currentSlide(3)">
     </div>
 
     <div class="gallery">
-      <a target="_blank" href="images/gallery/pringle.png">
-        <img src="images/gallery/pringle.png" alt="Forest" width="300" height="200">
-      </a>
+      <img src="images/gallery/pringle.png" onclick="openModal();currentSlide(4)">
     </div>
 
     <div class="gallery">
-      <a target="_blank" href="images/gallery/circle.png">
-        <img src="images/gallery/circle.png" alt="Fjords" width="300" height="200">
-      </a>
+      <img src="images/gallery/circle.png" onclick="openModal();currentSlide(5)">
     </div>
 
     <div class="gallery">
-      <a target="_blank" href="images/gallery/jigamaree.png">
-        <img src="images/gallery/jigamaree.png" alt="Northern Lights" width="300" height="200">
-      </a>
+      <img src="images/gallery/jigamaree.png" onclick="openModal();currentSlide(6)">
     </div>
 
     <div class="gallery">
-      <a target="_blank" href="images/gallery/triangle.png">
-        <img src="images/gallery/triangle.png" alt="Forest" width="300" height="200">
-      </a>
+      <img src="images/gallery/triangle.png" onclick="openModal();currentSlide(7)">
     </div>
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="slide">
+        <div class="numbertext">1 / 7</div>
+        <img src="images/gallery/swo.png" style="width:100%">
+      </div>
+
+      <div class="slide">
+        <div class="numbertext">2 / 7</div>
+        <img src="images/gallery/tentrils.png" style="width:100%">
+      </div>
+
+      <div class="slide">
+        <div class="numbertext">3 / 7</div>
+        <img src="images/gallery/drip.png" style="width:100%">
+      </div>
+
+      <div class="slide">
+        <div class="numbertext">4 / 7</div>
+        <img src="images/gallery/pringle.png" style="width:100%">
+      </div>
+
+      <div class="slide">
+        <div class="numbertext">5 / 7</div>
+        <img src="images/gallery/circle.png" style="width:100%">
+      </div>
+
+      <div class="slide">
+        <div class="numbertext">6 / 7</div>
+        <img src="images/gallery/jigamaree.png" style="width:100%">
+      </div>
+
+      <div class="slide">
+        <div class="numbertext">7 / 7</div>
+        <img src="images/gallery/triangle.png" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+
+  <script>
+  var modal = document.getElementById('myModal');
+  document.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 
 </body>
 </html>
