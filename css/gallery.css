@@ -2,26 +2,42 @@
 
 div.gallery {
   margin: 5px;
-  float: left;
+  /*float: left;*/
+  display: inline-block;
   width: 180px;
   height: 180px;
 }
 
 div.gallery img:hover {
-  border: 1px solid #777;
+  border: 3px solid #75BFB9;
+  box-shadow: 0 0 50px 0 #75BFB9;
+
+  transition: 0.25s;
+  z-index: 100;
 }
 
 div.gallery img {
-  border: 1px solid #ccc;
+  border: 3px solid lightgray;
+  border-radius: 10px;
   width: 100%;
   height: auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+
+  transition: 0.25s;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+div.showcase{
+  /*width: 80%;*/
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+
 }

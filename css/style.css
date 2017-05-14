@@ -6,6 +6,16 @@ body{
   margin: 0;
 }
 
+::-moz-selection {
+    color: #E4DDD1;
+    background: #F2807C;
+}
+
+::selection {
+    color: #E4DDD1;
+    background: #F2807C;
+}
+
 .headerWrapper{
   background-image: url("../images/highlight.png");
   width: 100%;
@@ -40,6 +50,13 @@ img.portrait{
   display: block;
   border-radius: 500px;
   margin-top: -125px;
+
+  transition: 0.5s;
+}
+
+img.portrait:hover{
+  box-shadow: 0 0 50px 5px #75BFB9;
+  transition: 0.5s;
 }
 
 img.icon{
