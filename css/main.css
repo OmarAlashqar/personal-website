@@ -7,8 +7,14 @@ body {
   padding-bottom: 50px;
   font-family: sans-serif;
   background: #eee; }
-  body path {
-    fill: blue; }
+
+::-moz-selection {
+  color: white;
+  background: #FF5C77; }
+
+::selection {
+  color: white;
+  background: #FF5C77; }
 
 .name-sig {
   display: block;

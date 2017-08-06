@@ -1,5 +1,6 @@
 $dark: #1F1F1F
 $accent: #00a388
+$inv-accent: #FF5C77
 $light: darkgray
 
 $break: 700px
@@ -15,8 +16,10 @@ body
   padding-bottom: 50px
   font-family: sans-serif
   background: #eee
-  path
-    fill: blue
+
+::selection
+  color: white
+  background: $inv-accent
 
 .name-sig
   display: block
