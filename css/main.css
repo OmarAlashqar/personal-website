@@ -1,0 +1,78 @@
+html {
+  overflow-y: scroll; }
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+  font-family: sans-serif;
+  background: #eee; }
+  body path {
+    fill: blue; }
+
+.name-sig {
+  display: block;
+  max-width: 60%;
+  width: 350px;
+  margin: auto;
+  padding-top: 50px; }
+
+.content-wrapper {
+  width: 950px;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 50px; }
+  .content-wrapper .personal, .content-wrapper .details-about, .content-wrapper .details-gallery {
+    -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2); }
+  .content-wrapper .personal {
+    float: left;
+    width: 35%;
+    background: gray;
+    margin-right: 20px; }
+    @media screen and (max-width: 700px) {
+      .content-wrapper .personal {
+        width: 100%;
+        margin-bottom: 20px; } }
+    .content-wrapper .personal img {
+      width: 100%;
+      margin-bottom: -5px; }
+    .content-wrapper .personal .nav-items a {
+      display: block;
+      border-bottom: 2px solid #00a388;
+      background-size: 100% 200%;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1F1F1F), color-stop(50%, #00a388));
+      background-image: -webkit-linear-gradient(top, #1F1F1F 50%, #00a388 50%);
+      background-image: -o-linear-gradient(top, #1F1F1F 50%, #00a388 50%);
+      background-image: linear-gradient(to bottom, #1F1F1F 50%, #00a388 50%);
+      -webkit-transition: background-position 0.5s;
+      -o-transition: background-position 0.5s;
+      transition: background-position 0.5s;
+      text-decoration: none;
+      color: white;
+      padding: 10px; }
+      .content-wrapper .personal .nav-items a:hover {
+        background-position: 0 100%; }
+    .content-wrapper .personal .links-wrapper {
+      background: white;
+      padding: 20px;
+      text-align: center; }
+      .content-wrapper .personal .links-wrapper a {
+        display: inline-block;
+        width: 40px;
+        margin: 5px; }
+  .content-wrapper .details {
+    overflow: auto;
+    background: white;
+    padding: 20px; }
+    .content-wrapper .details h1 {
+      color: darkgray;
+      font-size: 18px;
+      display: inline-block;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      padding-right: 30%;
+      border-bottom: 1px solid darkgray; }
+    .content-wrapper .details .gallery img {
+      width: 50%;
+      float: left; }

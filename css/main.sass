@@ -1,0 +1,85 @@
+$dark: #1F1F1F
+$accent: #00a388
+$light: darkgray
+
+$break: 700px
+
+// @keyframes nav-slide
+//   from
+
+html
+    overflow-y: scroll
+body
+  margin: 0
+  padding: 0
+  padding-bottom: 50px
+  font-family: sans-serif
+  background: #eee
+  path
+    fill: blue
+
+.name-sig
+  display: block
+  max-width: 60%
+  width: 350px
+  margin: auto
+  padding-top: 50px
+
+.content-wrapper
+  // background: red
+  width: 950px
+  max-width: 90%
+  margin: auto
+  margin-top: 50px
+
+  .personal, .details-about, .details-gallery
+    box-shadow: 0 0 80px rgba(0,0,0,0.2)
+
+  .personal
+    @media screen and (max-width: $break)
+        width: 100%
+        margin-bottom: 20px
+    float: left
+    width: 35%
+    background: gray
+    margin-right: 20px
+    img
+      width: 100%
+      margin-bottom: -5px
+    .nav-items
+      a
+        display: block
+        border-bottom: 2px solid $accent
+        background-size: 100% 200%
+        background-image: linear-gradient(to bottom, $dark 50%, $accent 50%)
+        transition: background-position 0.5s
+        text-decoration: none
+        color: white
+        padding: 10px
+        &:hover
+          background-position: 0 100%
+    .links-wrapper
+      background: white
+      padding: 20px
+      text-align: center
+      a
+        display: inline-block
+        width: 40px
+        margin: 5px
+
+  .details
+    overflow: auto
+    background: white
+    padding: 20px
+    h1
+      color: $light
+      font-size: 18px
+      display: inline-block
+      margin-bottom: 5px
+      padding-bottom: 5px
+      padding-right: 30%
+      border-bottom: 1px solid $light
+    .gallery
+      img
+        width: 50%
+        float: left
