@@ -72,15 +72,21 @@ body {
     background: white;
     padding: 20px; }
     .content-wrapper .details h1 {
-      text-transform: uppercase;
-      font-weight: 600;
       color: darkgray;
-      font-size: 15px;
+      font-size: 18px;
       display: inline-block;
       margin-bottom: 5px;
       padding-bottom: 5px;
       padding-right: 30%;
       border-bottom: 1px solid darkgray; }
     .content-wrapper .details .gallery img {
+      -webkit-transition: 0.2s ease;
+      -o-transition: 0.2s ease;
+      transition: 0.2s ease;
       width: 50%;
       float: left; }
+      .content-wrapper .details .gallery img:hover {
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease;
+        opacity: 0.5; }
