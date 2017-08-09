@@ -1,3 +1,54 @@
+.gallery img {
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  width: 50%;
+  float: left; }
+  .gallery img:hover {
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    opacity: 0.5; }
+
+.selector {
+  background: #1F1F1F;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .selector .selection {
+    text-align: center;
+    color: white;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 15px; }
+    .selector .selection:hover {
+      color: white;
+      cursor: pointer; }
+  .selector .active {
+    color: #00a388; }
+
+.slide-box {
+  border-bottom: 2px solid #00a388;
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1F1F1F), color-stop(50%, #00a388));
+  background-image: -webkit-linear-gradient(top, #1F1F1F 50%, #00a388 50%);
+  background-image: -o-linear-gradient(top, #1F1F1F 50%, #00a388 50%);
+  background-image: linear-gradient(to bottom, #1F1F1F 50%, #00a388 50%);
+  -webkit-transition: background-position 0.5s;
+  -o-transition: background-position 0.5s;
+  transition: background-position 0.5s; }
+  .slide-box:hover {
+    background-position: 0 100%; }
+
 html {
   overflow-y: scroll; }
 
@@ -16,11 +67,14 @@ body {
   color: white;
   background: #FF5C77; }
 
+.name-sig-wrapper {
+  width: 100%;
+  text-align: center; }
+
 .name-sig {
-  display: block;
+  display: inline-block;
   max-width: 60%;
   width: 350px;
-  margin: auto;
   padding-top: 50px; }
 
 .content-wrapper {
@@ -45,20 +99,9 @@ body {
       margin-bottom: -5px; }
     .content-wrapper .personal .nav-items a {
       display: block;
-      border-bottom: 2px solid #00a388;
-      background-size: 100% 200%;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1F1F1F), color-stop(50%, #00a388));
-      background-image: -webkit-linear-gradient(top, #1F1F1F 50%, #00a388 50%);
-      background-image: -o-linear-gradient(top, #1F1F1F 50%, #00a388 50%);
-      background-image: linear-gradient(to bottom, #1F1F1F 50%, #00a388 50%);
-      -webkit-transition: background-position 0.5s;
-      -o-transition: background-position 0.5s;
-      transition: background-position 0.5s;
       text-decoration: none;
       color: white;
       padding: 10px; }
-      .content-wrapper .personal .nav-items a:hover {
-        background-position: 0 100%; }
     .content-wrapper .personal .links-wrapper {
       background: white;
       padding: 20px;
@@ -79,14 +122,3 @@ body {
       padding-bottom: 5px;
       padding-right: 30%;
       border-bottom: 1px solid darkgray; }
-    .content-wrapper .details .gallery img {
-      -webkit-transition: 0.2s ease;
-      -o-transition: 0.2s ease;
-      transition: 0.2s ease;
-      width: 50%;
-      float: left; }
-      .content-wrapper .details .gallery img:hover {
-        -webkit-transition: 0.2s ease;
-        -o-transition: 0.2s ease;
-        transition: 0.2s ease;
-        opacity: 0.5; }

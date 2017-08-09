@@ -1,3 +1,5 @@
+
+
 $dark: #1F1F1F
 $accent: #00a388
 $inv-accent: #FF5C77
@@ -5,8 +7,8 @@ $light: darkgray
 
 $break: 700px
 
-// @keyframes nav-slide
-//   from
+@import '_design.sass'
+@import '_stylish.sass'
 
 html
     overflow-y: scroll
@@ -21,11 +23,14 @@ body
   color: white
   background: $inv-accent
 
+.name-sig-wrapper
+  width: 100%
+  text-align: center
+
 .name-sig
-  display: block
+  display: inline-block
   max-width: 60%
   width: 350px
-  margin: auto
   padding-top: 50px
 
 .content-wrapper
@@ -52,15 +57,9 @@ body
     .nav-items
       a
         display: block
-        border-bottom: 2px solid $accent
-        background-size: 100% 200%
-        background-image: linear-gradient(to bottom, $dark 50%, $accent 50%)
-        transition: background-position 0.5s
         text-decoration: none
         color: white
         padding: 10px
-        &:hover
-          background-position: 0 100%
     .links-wrapper
       background: white
       padding: 20px
@@ -82,11 +81,3 @@ body
       padding-bottom: 5px
       padding-right: 30%
       border-bottom: 1px solid $light
-    .gallery
-      img
-        transition: 0.2s ease
-        width: 50%
-        float: left
-        &:hover
-          transition: 0.2s ease
-          opacity: 0.5

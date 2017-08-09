@@ -24,14 +24,17 @@
 </head>
 <body>
 
-  <img class="name-sig" src="img/name.png" alt="O. Alashqar">
+  <div class="name-sig-wrapper">
+    <a href="index.html"><img class="name-sig" src="img/name.png" alt="O. Alashqar"></a>
+  </div>
+
   <div class="content-wrapper">
     <div class="personal">
       <img src="img/tomfoolery.jpg" alt="Portrait">
       <div class="nav-items">
-        <a href="index.html">About me</a>
-        <a href="design.html">Design</a>
-        <a target="_blank" href="res/resume.pdf">View Resume</a>
+        <a class="slide-box" href="index.html">About me</a>
+        <a class="slide-box" href="design.html">Design</a>
+        <a class="slide-box" target="_blank" href="res/resume.pdf">View Resume</a>
       </div>
       <div class="links-wrapper">
         <a href="http://www.github.com/omarashqar" target="_blank"><img src="img/icons/github.png" alt="Github"></a></li>
@@ -39,17 +42,37 @@
     </div>
 
     <div class="details">
-      <div class="gallery">
 
-        <a href="img/gallery/triangle.png" data-rel="lightcase"><img class="overlay-wrapper" src="img/gallery/triangle.png" alt=""></a>
+      <div class="selector">
+        <div class="selection slide-box active" id="logos-select" onclick="changeTab('logos')">Logos</div>
+        <div class="selection slide-box" id="graphics-select" onclick="changeTab('graphics')">Graphics</div>
+      </div>
+
+      <div class="gallery" id="logos">
+        <a href="img/logos/logo1.png" data-rel="lightcase"><img src="img/logos/logo1.png" alt=""></a>
+        <a href="img/logos/logo1d.png" data-rel="lightcase"><img src="img/logos/logo1d.png" alt=""></a>
+        <a href="img/logos/logo2d.png" data-rel="lightcase"><img src="img/logos/logo2d.png" alt=""></a>
+        <a href="img/logos/logo2.png" data-rel="lightcase"><img src="img/logos/logo2.png" alt=""></a>
+        <a href="img/logos/logo3.png" data-rel="lightcase"><img src="img/logos/logo3.png" alt=""></a>
+        <a href="img/logos/logo3d.png" data-rel="lightcase"><img src="img/logos/logo3d.png" alt=""></a>
+        <a href="img/logos/logo4d.png" data-rel="lightcase"><img src="img/logos/logo4d.png" alt=""></a>
+        <a href="img/logos/logo4.png" data-rel="lightcase"><img src="img/logos/logo4.png" alt=""></a>
+        <a href="img/logos/logo5.png" data-rel="lightcase"><img src="img/logos/logo5.png" alt=""></a>
+        <a href="img/logos/logo5d.png" data-rel="lightcase"><img src="img/logos/logo5d.png" alt=""></a>
+      </div>
+
+      <div class="gallery" id="graphics">
+        <a href="img/gallery/triangle.png" data-rel="lightcase"><img src="img/gallery/triangle.png" alt=""></a>
         <a href="img/gallery/drip.png" data-rel="lightcase"><img src="img/gallery/drip.png" alt=""></a>
         <a href="img/gallery/jigamaree.png" data-rel="lightcase"><img src="img/gallery/jigamaree.png" alt=""></a>
         <a href="img/gallery/pringle.png" data-rel="lightcase"><img src="img/gallery/pringle.png" alt=""></a>
         <a href="img/gallery/swo.png" data-rel="lightcase"><img src="img/gallery/swo.png" alt=""></a>
         <a href="img/gallery/tentrils.png" data-rel="lightcase"><img src="img/gallery/tentrils.png" alt=""></a>
       </div>
+
     </div>
   </div>
 
+  <script type="text/javascript" src="js/design.js"></script>
 </body>
 </html>
