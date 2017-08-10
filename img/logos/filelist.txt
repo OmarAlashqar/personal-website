@@ -1,4 +1,4 @@
-filelist.txt
+fileList.txt
 getList.cmd
 logo1.png
 logo1d.png
