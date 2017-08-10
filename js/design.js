@@ -6,6 +6,7 @@ $(function() {
 function loadImages(dir, id){
   var container = document.getElementById(id)
   $.ajax({
+      async: true,
       url : dir,
       success: function (data) {
           $(data).find("a").attr("href", function (i, val) {
