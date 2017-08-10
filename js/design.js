@@ -1,6 +1,6 @@
 $(function() {
-    loadImages("/img/graphics/", "graphics")
-    loadImages("/img/logos/", "logos")
+    loadImages("img/graphics/", "graphics")
+    loadImages("img/logos/", "logos")
 })
 
 function loadImages(dir, id){
@@ -24,7 +24,7 @@ function loadImages(dir, id){
          $('#' + id).append("<a href=" + dir + file + " data-rel='lightcase'><img src=" + dir + file + " alt=''></a>")
          $('a[data-rel^=lightcase]').lightcase()
      })
-  }, 'text')
+  })
 }
 
 function changeTab(tab){
