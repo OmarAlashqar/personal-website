@@ -1,1 +1,1 @@
-dir /b /a-d > filelist.txt
+dir /b /a-d > fileList.txt
