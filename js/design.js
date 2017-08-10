@@ -5,17 +5,17 @@ $(function() {
 
 function loadImages(dir, id){
   // var container = document.getElementById(id)
-  // $.ajax({
-  //     url : dir,
-  //     success: function (data) {
-  //         $(data).find("a").attr("href", function (i, val) {
-  //             if( val.match(/\.(png)$/) ){
-  //               $('#' + id).append("<a href=" + dir + val + " data-rel='lightcase'><img src=" + dir + val + " alt=''></a>")
-  //               $('a[data-rel^=lightcase]').lightcase()
-  //             }
-  //         })
-  //     }
-  // })
+  $.ajax({
+      url : dir,
+      success: function (data) {
+          $(data).find("a").attr("href", function (i, val) {
+              if( val.match(/\.(png)$/) ){
+                $('#' + id).append("<a href=" + dir + val + " data-rel='lightcase'><img src=" + dir + val + " alt=''></a>")
+                $('a[data-rel^=lightcase]').lightcase()
+              }
+          })
+      }
+  })
 
   // $.get(dir + "fileList.txt", function(data) {
   //    var textByLine = data.split("\n")
@@ -26,21 +26,21 @@ function loadImages(dir, id){
   //        $('a[data-rel^=lightcase]').lightcase()
   //    })
   // })
-  var xhr = new XMLHttpRequest();
-  xhr.addEventListener('readystatechange', (output) => {
-    if (xhr.readyState === 4) {
-      var response = xhr.responseText;
-      var textByLine = response.split('\n');
-      textByLine.forEach(function(file){
-        if (file.includes(".png"))
-        $('#' + id).append("<a href=" + dir + file + " data-rel='lightcase'><img src=" + dir + file + " alt=''></a>")
-        $('a[data-rel^=lightcase]').lightcase()
-      })
-    }
-  })
-  
-  xhr.open('GET', dir + "fileList.txt", true);
-  xhr.send();
+  // var xhr = new XMLHttpRequest();
+  // xhr.addEventListener('readystatechange', (output) => {
+  //   if (xhr.readyState === 4) {
+  //     var response = xhr.responseText;
+  //     var textByLine = response.split('\n');
+  //     textByLine.forEach(function(file){
+  //       if (file.includes(".png"))
+  //       $('#' + id).append("<a href=" + dir + file + " data-rel='lightcase'><img src=" + dir + file + " alt=''></a>")
+  //       $('a[data-rel^=lightcase]').lightcase()
+  //     })
+  //   }
+  // })
+  //
+  // xhr.open('GET', dir + "fileList.txt", true);
+  // xhr.send();
 }
 
 function changeTab(tab){
