@@ -4,19 +4,27 @@ $(function() {
 })
 
 function loadImages(dir, id){
-  var container = document.getElementById(id)
-  $.ajax({
-      async: true,
-      url : dir,
-      success: function (data) {
-          $(data).find("a").attr("href", function (i, val) {
-              if( val.match(/\.(png)$/) ){
-                $('#' + id).append("<a href=" + dir + val + " data-rel='lightcase'><img src=" + dir + val + " alt=''></a>")
-                $('a[data-rel^=lightcase]').lightcase()
-              }
-          })
-      }
-  })
+  // var container = document.getElementById(id)
+  // $.ajax({
+  //     url : dir,
+  //     success: function (data) {
+  //         $(data).find("a").attr("href", function (i, val) {
+  //             if( val.match(/\.(png)$/) ){
+  //               $('#' + id).append("<a href=" + dir + val + " data-rel='lightcase'><img src=" + dir + val + " alt=''></a>")
+  //               $('a[data-rel^=lightcase]').lightcase()
+  //             }
+  //         })
+  //     }
+  // })
+  $.get(dir + "fileList.txt", function(data) {
+     var textByLine = data.split("\n")
+     var container = document.getElementById(id)
+     textByLine.forEach(function(file){
+       if (file.includes(".png"))
+         $('#' + id).append("<a href=" + dir + file + " data-rel='lightcase'><img src=" + dir + file + " alt=''></a>")
+         $('a[data-rel^=lightcase]').lightcase()
+     })
+  }, 'text')
 }
 
 function changeTab(tab){
