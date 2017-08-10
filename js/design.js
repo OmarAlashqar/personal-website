@@ -1,6 +1,6 @@
 $(function() {
-    loadImages("img/graphics/", "graphics")
-    loadImages("img/logos/", "logos")
+    loadImages("/img/graphics/", "graphics")
+    loadImages("/img/logos/", "logos")
 })
 
 function loadImages(dir, id){
