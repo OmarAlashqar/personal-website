@@ -1,12 +1,12 @@
 fileList.txt
 getList.cmd
 logo1.png
-logo1d.png
+logo1z.png
 logo2.png
-logo2d.png
+logo2z.png
 logo3.png
-logo3d.png
+logo3z.png
 logo4.png
-logo4d.png
+logo4z.png
 logo5.png
-logo5d.png
+logo5z.png
