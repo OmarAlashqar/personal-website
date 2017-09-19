@@ -41,6 +41,32 @@
   .slide-box:hover {
     background-position: 0 100%; }
 
+.entry {
+  border-left: 5px solid #00a388;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 20px; }
+
+.cv-title {
+  font-weight: 600;
+  margin: 0;
+  margin-top: 10px;
+  display: inline-block; }
+
+.cv-place {
+  color: #00a388;
+  margin: 0;
+  display: inline-block; }
+
+.cv-time {
+  margin-top: 5px;
+  font-size: 15px;
+  color: darkgray; }
+
+em {
+  color: #00a388; }
+
 html {
   overflow-y: scroll; }
 
