@@ -64,6 +64,56 @@
   font-size: 15px;
   color: darkgray; }
 
+.cv-bar-100 {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #00a388), color-stop(0%, darkgray));
+  background-image: -webkit-linear-gradient(left, #00a388 100%, darkgray 0%);
+  background-image: -o-linear-gradient(left, #00a388 100%, darkgray 0%);
+  background-image: linear-gradient(to right, #00a388 100%, darkgray 0%); }
+
+.proj-title {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block; }
+  .proj-title::after {
+    content: '';
+    background-image: url(../img/icons/github.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; }
+
+.proj-img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .proj-img:hover {
+    -webkit-filter: sepia(0.5);
+    filter: sepia(0.5);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+
+.btn {
+  width: 80%;
+  margin: auto;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px; }
+
 em {
   color: #00a388; }
 
