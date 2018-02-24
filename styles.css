@@ -1,0 +1,175 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  background: #eee;
+  font-family: sans-serif;
+  color: #1C1F33; }
+
+body {
+  width: 100%; }
+
+.no-select, .ribbon {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.body-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 100px; }
+
+.shadow, .spotlight, .about {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); }
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #00a388; }
+
+.ribbon {
+  width: 100%;
+  margin-bottom: 100px;
+  background: #00a388; }
+  .ribbon .name {
+    background: #1C1F33;
+    color: #FCFFFC;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 10%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%); }
+
+.spotlight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40%;
+  max-width: 300px;
+  background: white;
+  margin-right: 20px;
+  float: left; }
+  @media screen and (max-width: 700px) {
+    .spotlight {
+      margin: auto;
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px; } }
+  .spotlight img {
+    width: 100%; }
+  .spotlight a.resume {
+    display: block;
+    width: 100%;
+    background: #1C1F33;
+    color: #FCFFFC;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    -webkit-transition: 0.25s ease;
+    -o-transition: 0.25s ease;
+    transition: 0.25s ease; }
+    .spotlight a.resume:hover {
+      background: #00a388;
+      color: #1C1F33; }
+    .spotlight a.resume:active {
+      background: #068c76; }
+  .spotlight .connect {
+    width: 100%;
+    text-align: center;
+    padding: 20px; }
+    .spotlight .connect * {
+      margin: 4px; }
+    .spotlight .connect svg {
+      width: 60px;
+      height: 60px; }
+      .spotlight .connect svg:hover {
+        cursor: pointer; }
+        .spotlight .connect svg:hover .fillable {
+          -webkit-transition: 0.25s ease;
+          -o-transition: 0.25s ease;
+          transition: 0.25s ease;
+          fill: #00a388; }
+      .spotlight .connect svg .fillable {
+        -webkit-transition: 0.25s ease;
+        -o-transition: 0.25s ease;
+        transition: 0.25s ease;
+        fill: #1C1F33; }
+
+.about {
+  background: white;
+  padding: 20px;
+  max-width: 600px;
+  overflow: hidden;
+  margin: auto; }
+  .about .highlight {
+    background: #eee;
+    padding: 10px;
+    text-align: center; }
+
+.projects-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  float: left; }
+
+.project-item {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  -webkit-box-shadow: 0 0 15px 0px rgba(28, 31, 51, 0.3);
+  box-shadow: 0 0 15px 0px rgba(28, 31, 51, 0.3); }
+  .project-item:hover {
+    cursor: pointer; }
+    .project-item:hover img {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+  .project-item .image {
+    overflow: hidden;
+    max-height: 400px; }
+    .project-item .image img {
+      -webkit-transition: ease 0.5s;
+      -o-transition: ease 0.5s;
+      transition: ease 0.5s; }
+  .project-item .caption {
+    text-align: center;
+    padding: 15px;
+    background-color: #FCFFFC; }
+
+.project-name {
+  font-weight: bold;
+  margin-bottom: 10px; }

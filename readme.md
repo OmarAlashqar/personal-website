@@ -1,2 +1,2 @@
-# Personal website
-Woooo :fire:
+## Personal website
+:fire:
