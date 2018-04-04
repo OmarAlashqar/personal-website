@@ -1,38 +1,37 @@
-.projects-wrapper
-    display: flex
-    justify-content: center
-    flex-direction: row
-    flex-wrap: wrap
-    float: left
+$break: 768px
 
-.project-item
-    margin: 10px
-    display: flex
-    flex-direction: column
-    width: 100%
-    max-width: 400px
-    @extend .shadow
-    &:hover
-        cursor: pointer
-        img
-            transform: scale(1.2)
-    &:active
-        .caption
-            background-color: $accent
-            color: $light
+.projects
+    padding-top: 60px
 
-    .image
-        overflow: hidden
-        max-height: 400px
-        img
-              transition: ease 0.5s
-    .caption
-        text-align: center
-        padding: 15px
-        background-color: $light
-        color: $dark
-        transition: 0.25s ease
+.projects-deck
+    padding-top: 50px
 
-.project-name
-    font-weight: bold
-    margin-bottom: 10px
+    .project-card
+        @extend .hover-clickable
+        display: flex
+        height: 300px
+        margin-bottom: 50px
+        flex-direction: row
+        @media screen and (max-width: $break)
+            flex-direction: column
+            height: 500px
+
+        .preview, .details
+            flex-basis: 50%
+
+        .preview
+            overflow: hidden
+            @media screen and (max-width: $break)
+                flex-basis: 60%
+
+            img
+                min-width: 100%
+                min-height: 100%
+                width: auto
+                height: auto
+
+        .details
+            background: $white
+            padding: 40px
+            @media screen and (max-width: $break)
+                flex-basis: 40%

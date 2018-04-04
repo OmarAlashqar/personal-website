@@ -1,4 +1,4 @@
-Util = {
+let Util = {
     getJSON: (url, callback) => {
         $.getJSON(url)
             .then(data => callback(data))

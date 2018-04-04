@@ -2,21 +2,21 @@
     {
         "name": "Lazorboi",
         "projectURL": "https://github.com/CrypticEskimo/laz0rb0i",
-        "imgURL": "/img/projects/lazorboi.png",
+        "src": "/img/projects/lazorboi.png",
         "alt": "alternative",
         "caption": "Lazer display embedded system"
     },
     {
         "name": "Stiki",
         "projectURL": "https://github.com/OmarAlashqar/stiki",
-        "imgURL": "/img/projects/stiki.png",
+        "src": "/img/projects/stiki.png",
         "alt": "alternative",
         "caption": "Realtime database sticky notes"
     },
     {
         "name": "Swift elements",
         "projectURL": "https://github.com/OmarAlashqar/swift-elements",
-        "imgURL": "/img/projects/swift-elements.png",
+        "src": "/img/projects/swift-elements.png",
         "alt": "alternative",
         "caption": "Dynamic atomic elements lookup tool"
     }
