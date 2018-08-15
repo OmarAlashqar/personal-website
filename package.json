@@ -4,7 +4,9 @@
   "description": ":fire:",
   "main": "gulp.js",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "watch": "gulp watch"
   },
   "keywords": [],
   "license": "ISC",
