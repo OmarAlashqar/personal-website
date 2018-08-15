@@ -14,7 +14,10 @@
         height: 32px;
         position: absolute;
         top: -16px;
-        left: 16px;
+        left: 6%;
+        @media screen and (min-width: 600px) {
+            left: 20%;
+        };
         transform: rotate(45deg);
     }
 }
