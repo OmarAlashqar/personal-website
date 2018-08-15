@@ -12,9 +12,9 @@ const paths = {
     html: {src: './index.html'}
 };
 
-// gulp.task('clean', () => {
-//     return del(['./dist/**/*']);
-// });
+gulp.task('clean', () => {
+    return del(['./dist/**/*']);
+});
 
 gulp.task('build', ['sass', 'babel']);
 

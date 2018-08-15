@@ -26,7 +26,7 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
-<body>
+<body class="bg-white">
 
     <div class="container-fluid banner">
         <!-- <canvas class="banner-canvas"></canvas> -->
@@ -48,37 +48,200 @@
         </div>
     </div>
 
-    <div class="container-fluid mb-5">
-        <h2 class="section-title">Projects</h2>
+    <div class="jumbotron jumbotron-fluid bg-white">
+        <div class="container">
+            <h2 class="sec-title">Projects</h2>
+            
+            <div class="d-flex justify-content-center flex-wrap">
+                <div class="card card-proj">
+                    <img class="card-img-top" src="./assets/proj/lazorboi.png" alt="lazorboi setup">
+                    <a href="https://github.com/CrypticEskimo/laz0rb0i" target="_blank" class="btn btn-primary btn-project">view on GitHub</a>
+                    <div class="card-body bg-gray">
+                        <h4 class="card-title">Lazorboi</h4>
+                        <p class="card-text">
+                            Lazer display embedded system controlled with a CLI
+                        </p>
+                    </div>
+                </div>
 
-        <div class="d-flex justify-content-center flex-wrap">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./assets/img/lazorboi.png" alt="lazorboi setup">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card card-proj">
+                    <img class="card-img-top" src="./assets/proj/lynx.png" alt="lazorboi setup">
+                    <a href="https://github.com/Team6378/FRC-2017" target="_blank" class="btn btn-primary btn-project">view on GitHub</a>
+                    <a href="http://frc6378.weebly.com/" target="_blank" class="btn btn-primary btn-project">view website</a>
+                    <div class="card-body bg-gray">
+                        <h4 class="card-title">Wild Lynx (FRC)</h4>
+                        <p class="card-text">
+                            Programming the FRC Team 6378 (LYNX) robot for the 2017 competition
+                        </p>
+                    </div>
                 </div>
-            </div>
             
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./assets/img/lazorboi.png" alt="lazorboi setup">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card card-proj">
+                    <img class="card-img-top" src="./assets/proj/spotirave.png" alt="lazorboi setup">
+                    <a href="https://github.com/OmarAlashqar/spotirave" target="_blank" class="btn btn-primary btn-project">view on GitHub</a>
+                    <div class="card-body bg-gray">
+                        <h4 class="card-title">Spotirave <span class="badge badge-secondary">in development</span></h4>
+                        <p class="card-text">
+                            Realtime audio visualization web app that pulls from your Spotify playlists
+                        </p>
+                    </div>
                 </div>
-            </div>
             
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./assets/img/lazorboi.png" alt="lazorboi setup">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card card-proj">
+                    <img class="card-img-top" src="./assets/proj/nochill.png" alt="lazorboi setup">
+                    <a href="https://github.com/OmarAlashqar/NoChill" target="_blank" class="btn btn-primary btn-project">view on GitHub</a>
+                    <div class="card-body bg-gray">
+                        <h4 class="card-title">No Chill</h4>
+                        <p class="card-text">
+                            Endless randomly generated levels frogger clone written in Java
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="card card-proj">
+                    <img class="card-img-top" src="./assets/proj/stiki.png" alt="lazorboi setup">
+                    <a href="https://github.com/OmarAlashqar/stiki" target="_blank" class="btn btn-primary btn-project">view on GitHub</a>
+                    <div class="card-body bg-gray">
+                        <h4 class="card-title">Stiki <span class="badge badge-secondary">alpha</span></h4>
+                        <p class="card-text">
+                            Realtime notes web app utilizing Firebase
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-proj">
+                    <img class="card-img-top" src="./assets/proj/constella.png" alt="lazorboi setup">
+                    <a href="https://github.com/OmarAlashqar/stiki" target="_blank" class="btn btn-primary btn-project">view on GitHub</a>
+                    <div class="card-body bg-gray">
+                        <h4 class="card-title">Constella <span class="badge badge-secondary">continuing</span></h4>
+                        <p class="card-text">
+                            Responsive customizable HTML5 Canvas animations
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid bg-gray mb-0">
+    <div class="jumbotron jumbotron-fluid bg-gray">
         <div class="container">
-            <h2 class="section-title">Tools I've used</h2>
-        
+            <h2 class="sec-title">Technology</h2>
+
+            <h3 class="tech-title">Languages</h3>
+            <div class="d-flex flex-wrap wrapper-tech">
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/cpp.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body">
+                        <h5>C/C++</h5>
+                    </div>
+                </div>
+            
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/java.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body">
+                        <h5>Java</h5>
+                    </div>
+                </div>
+            
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/js.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body">
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/python.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body">
+                        <h5>Python</h5>
+                    </div>
+                </div>
+
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/bash.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body">
+                        <h5>Bash</h5>
+                    </div>
+                </div>
+
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/vhdl.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body">
+                        <h5>VHDL</h5>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="tech-title">Web Development</h3>
+            <div class="d-flex flex-wrap wrapper-tech">
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/nodejs.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body bg-teal">
+                        <h5>NodeJS</h5>
+                    </div>
+                </div>
+            
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/expressjs.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body bg-teal">
+                        <h5>ExpressJS</h5>
+                    </div>
+                </div>
+            
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/reactjs.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body bg-teal">
+                        <h5>ReactJS</h5>
+                    </div>
+                </div>
+            
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/firebase.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body bg-teal">
+                        <h5>Firebase</h5>
+                    </div>
+                </div>
+            
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/mongodb.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body bg-teal">
+                        <h5>MongoDB</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="tech-title">Tools</h3>
+            <div class="d-flex flex-wrap wrapper-tech">
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/linux.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body bg-black">
+                        <h5>Linux</h5>
+                    </div>
+                </div>
+            
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/git.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body bg-black">
+                        <h5>Git</h5>
+                    </div>
+                </div>
+            
+                <div class="card card-tech">
+                    <img class="card-img-top" src="./assets/tech/vim.png" alt="lazorboi setup">
+                    <div class="card-body card-tech-body bg-black">
+                        <h5>Vim</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-white">
+        <div class="container text-center">
+            <a href="./resume.pdf" target="_blank" class="btn btn-outline-primary">resume</a>
+            <a href="https://github.com/OmarAlashqar" target="_blank" class="btn btn-outline-primary">github</a>
+            <a href="https://www.linkedin.com/in/omaralashqar" target="_blank" class="btn btn-outline-primary">linkedin</a>
         </div>
     </div>
 

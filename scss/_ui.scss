@@ -1,4 +1,32 @@
 
+.bg-gray {
+    background-color: $gray !important;
+}
+
+.bg-white {
+    background-color: $white !important;
+}
+
+.bg-black {
+    background-color: $black !important;
+}
+
+.bg-red {
+    background-color: $red !important;
+}
+
+.bg-teal {
+    background-color: $teal !important;
+}
+
+.bg-cyan {
+    background-color: $cyan !important;
+}
+
+.color-white {
+    color: $white;
+}
+
 .btn-outline-primary {
     color: $black;
     border: 1px solid $black;
@@ -15,10 +43,42 @@
     }
 }
 
+.btn-primary {
+    @extend .btn-outline-primary;
+    color: $white;
+    z-index: 100;
+    background-color: $black;
+    border: 1px solid $black;
+}
+
+.btn-project {
+    border-radius: 0;
+}
+
 .card {
     margin: 10px;
 }
 
-.card-body {
-    background-color: $gray;
+.card-tech {
+    width: 7.8rem;
+    border: 0;
+}
+
+.card-proj {
+    width: 18rem;
+}
+
+.card-tech-body {
+    background-color: $black;
+    color: $white;
+    padding: 6px;
+    text-align: center;
+
+    h5 {
+        margin: 0;
+    }
+}
+
+.badge {
+    font-size: 60%;
 }

@@ -1,15 +1,8 @@
 @import 'variables';
 @import 'ui';
+@import 'sections';
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Open Sans', sans-serif;
-
-body {
-    background-color: $white;
-}
-
-.bg-gray {
-    background-color: $gray;
-}
 
 .banner-canvas {
     position: absolute;
@@ -23,7 +16,7 @@ body {
     height: 60px;
     @media screen and (min-width: $desktop-bp) {
             height: 140px;
-        }
+    };
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,26 +28,6 @@ body {
         font-size: 2em;
         @media screen and (min-width: $desktop-bp) {
             font-size: 2.5em;
-        }
-    }
-}
-
-.sec1 {
-    position: relative;
-    background-color: $gray;
-    background-image: url('../assets/bg/funky-lines.png');
-    background-image: linear-gradient(to bottom, rgba($gray ,0.4) 0%,rgba($gray, 0.4) 100%), url('../assets/bg/funky-lines.png');
-    display: flex;
-    justify-content: center;
-
-    &:before {
-        content: '';
-        background-color: $cyan;
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        top: -16px;
-        left: 16px;
-        transform: rotate(45deg)
+        };
     }
 }
