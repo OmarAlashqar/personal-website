@@ -1,25 +1,26 @@
 {
   "name": "personal-website",
-  "version": "1.0.0",
-  "description": ":fire:",
-  "main": "gulp.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
   "scripts": {
-    "build": "gulp build",
-    "clean": "gulp clean",
-    "watch": "gulp watch"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "keywords": [],
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.24.6",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "dependencies": {}
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
