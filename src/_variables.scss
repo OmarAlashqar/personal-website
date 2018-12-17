@@ -1,0 +1,21 @@
+$black: #333;
+
+@mixin a-btn {
+  background-color: $black;
+  color: white;
+  padding: 4px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition:
+    background-color ease 0.25s,
+    color ease 0.25s;
+  &:hover {
+    background-color: lightcyan;
+    color: $black;
+  }
+  &:active {
+    background-color: lightgreen;
+    color: $black;
+  }
+}
