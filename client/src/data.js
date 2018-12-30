@@ -1,6 +1,6 @@
 const data = {
   name: 'Omar Alashqar',
-  urlResume: 'https://omaralashqar.me/resume.pdf',
+  urlResume: '/resume.pdf',
   urlGithub: 'https://github.com/OmarAlashqar',
   urlLinkedin: 'https://www.linkedin.com/in/omaralashqar',
   projects: [
