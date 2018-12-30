@@ -14,9 +14,9 @@ const Card = props => {
 
   return (
     <div className='card'>
-      {imgSrc &&
+      <div className='card-img'>
         <img src={imgSrc} alt={imgAlt || title} />
-      }
+      </div>
 
       <div className='btn-wrapper'>
         {urlGithub && <a className='card-link' href={urlGithub}>View on Github</a>}
