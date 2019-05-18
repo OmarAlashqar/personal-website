@@ -1,0 +1,34 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "build": "npm run clean && concurrently \"gulp css:build\" \"gulp js:build\" \"gulp assets\" \"gulp markup\"",
+    "dev": "concurrently \"gulp css:dev\" \"gulp js:dev\" \"gulp assets\" \"gulp markup\"",
+    "clean": "del build .publish",
+    "publish": "npm run build && gulp publish && npm run clean",
+    "start": "npm run dev && gulp watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.5",
+    "browserify": "^16.2.3",
+    "concurrently": "^4.1.0",
+    "cssnano": "^4.1.10",
+    "del-cli": "^1.1.0",
+    "gulp": "^4.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
