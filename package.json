@@ -1,34 +1,46 @@
 {
-  "name": "website",
+  "name": "portfolio",
+  "private": true,
+  "description": "Personal website | Omar Alashqar",
   "version": "1.0.0",
-  "description": "Personal website",
-  "scripts": {
-    "build": "npm run clean && concurrently \"gulp css:build\" \"gulp js:build\" \"gulp assets\" \"gulp markup\"",
-    "dev": "concurrently \"gulp css:dev\" \"gulp js:dev\" \"gulp assets\" \"gulp markup\"",
-    "clean": "del build .publish",
-    "publish": "npm run build && gulp publish && npm run clean",
-    "start": "npm run dev && gulp watch"
+  "author": "Omar Alashqar <o.ashqar@outlook.com>",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gatsby": "^2.3.34",
+    "gatsby-background-image": "0.9.14",
+    "gatsby-image": "^2.0.41",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.35",
+    "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-transformer-remark": "2.6.50",
+    "gatsby-transformer-sharp": "^2.1.18",
+    "intersection-observer": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.6.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "autoprefixer": "^9.5.1",
-    "babelify": "^10.0.0",
-    "browser-sync": "2.26.7",
-    "browserify": "^16.2.3",
-    "concurrently": "^4.1.0",
-    "cssnano": "^4.1.10",
-    "del-cli": "^1.1.0",
-    "gulp": "^4.0.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-compile-handlebars": "^0.6.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.17.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
+    "start": "npm run develop",
+    "clean": "gatsby clean",
+    "build": "gatsby build",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   }
 }
