@@ -48,7 +48,7 @@ const IndexPage = () => {
             <Col sm="10" lg='8' xl='6'>
               <Jumbotron className="greeting">
                 <div dangerouslySetInnerHTML={{ __html: greeting }} />
-                <Nav horizontal className="align-items-sm-center">
+                <Nav horizontal className="align-items-center">
                   <Nav.Item>
                     <Nav.Link href={`mailto:${email}`}>
                       <span className="link">Contact me</span>
