@@ -4,7 +4,7 @@ module.exports = {
     title: `Omar Alashqar | Portfolio`,
     description: `Find out more about me and what we can do together.`,
     author: `Omar Alashqar`,
-    email: `oaaalash@uwaterloo.ca`,
+    email: `omar.alashqar@uwaterloo.ca`,
     github: `https://github.com/OmarAlashqar`,
     linkedin: `https://www.linkedin.com/in/omaralashqar`,
     // resume: ``,

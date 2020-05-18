@@ -1,7 +1,7 @@
 # Hi, I'm Omar Alashqar
 
-I'm interested in opportunities that can bring you value. Let me introduce myself.
+I'm an engineering student and an aspiring creator of things that make a difference.
 
-I have experience working on **full-stack** software and **data engineering** projects. You'll find that I'm a quick learner and tend to keep up with new tech as I'm passionate about software and design. Not to mention, I love mystery novels, all kinds of movies, and music!
+I have experience working on **Full Stack** software and **Data Engineering** projects. You'll find that I'm a quick learner and tend to keep up with new tech as I'm passionate about software and design.
 
-I've had the pleasure of working with talented teams and I'm always looking for new opportunities. Currently, I'm looking for a four month co-op internship for **September - December, 2020**.
+I've had the pleasure of working with talented teams and I'm always looking for new opportunities. Currently seeking a four-month co-op internship for **September - December, 2020**.
