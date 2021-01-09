@@ -1,13 +1,22 @@
 {
-  "name": "with-typescript",
+  "name": "personal-website",
   "version": "1.0.0",
+  "author": {
+    "name": "Omar Alashqar",
+    "email": "o.ashqar@outlook.com"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "dependencies": {
+    "@chakra-ui/react": "1.1.2",
+    "@emotion/react": "11.1.4",
+    "@emotion/styled": "11.0.0",
+    "framer-motion": "3.2.0",
     "next": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
@@ -16,6 +25,13 @@
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "4.12.0",
+    "@typescript-eslint/parser": "4.12.0",
+    "eslint": "7.17.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "prettier": "2.2.1",
     "typescript": "4.0"
   },
   "license": "MIT"
