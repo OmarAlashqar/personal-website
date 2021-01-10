@@ -1,15 +1,13 @@
-import Link from 'next/link';
+import React from 'react';
 import Layout from '../components/Layout';
+import Hero from '../components/Hero';
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
+import data from '../cms/hero';
+
+const Index: React.FC = () => (
+  <Layout title="Omar Alashqar | 👋">
+    <Hero imageURL={data.imageURL} title={data.title} body={data.body} />
   </Layout>
 );
 
-export default IndexPage;
+export default Index;
