@@ -5,7 +5,7 @@ import {
 } from 'react-icons/ai';
 
 export default {
-  email: 'oaaalash@uwaterloo.ca',
+  email: 'omar.alashqar@uwaterloo.ca',
   resumeURL: '/resume.pdf',
   links: [
     {
@@ -15,7 +15,7 @@ export default {
     },
     {
       tooltip: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/omaralashqar/',
+      href: 'https://www.linkedin.com/in/omaralashqar',
       icon: AiFillLinkedin,
     },
     {
