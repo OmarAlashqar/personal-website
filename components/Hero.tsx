@@ -105,7 +105,7 @@ const Hero: React.FC<HeroProps> = ({
         ))}
 
         <NavItem to={`mailto:${data.email}`} tooltip="Email" isLast>
-          <Icon as={AiFillMail} w={8} h={8}></Icon>
+          <Icon fill="dark" as={AiFillMail} w={8} h={8}></Icon>
         </NavItem>
       </Flex>
     </Flex>

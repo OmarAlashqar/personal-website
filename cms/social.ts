@@ -4,13 +4,17 @@ import {
   AiFillLinkedin,
 } from 'react-icons/ai';
 
+import {
+  FaGoodreads,
+} from 'react-icons/fa';
+
 export default {
   email: 'omar.alashqar@uwaterloo.ca',
   resumeURL: '/resume.pdf',
   links: [
     {
       tooltip: 'GitHub',
-      href: 'https://github.com/OmarAlashqar',
+      href: 'https://github.com/omaralashqar',
       icon: AiFillGithub,
     },
     {
@@ -23,5 +27,10 @@ export default {
       href: 'https://dribbble.com/oalashqar',
       icon: AiFillDribbbleCircle,
     },
+    {
+      tooltip: 'Goodreads',
+      href: 'https://www.goodreads.com/omaralashqar',
+      icon: FaGoodreads,
+    }
   ],
 };
