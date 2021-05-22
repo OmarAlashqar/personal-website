@@ -22,17 +22,17 @@ export default {
       icon: AiFillLinkedin,
     },
     {
-      tooltip: 'Dribbble',
+      tooltip: 'Dribbble (Design)',
       href: 'https://dribbble.com/omaralashqar',
       icon: AiFillDribbbleCircle,
     },
     {
-      tooltip: 'Goodreads',
+      tooltip: 'Goodreads (Books)',
       href: 'https://www.goodreads.com/omaralashqar',
       icon: ImBooks,
     },
     {
-      tooltip: 'Letterboxd',
+      tooltip: 'Letterboxd (Movies)',
       href: 'https://letterboxd.com/plastic_straw',
       icon: HiFilm,
     },
