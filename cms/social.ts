@@ -4,9 +4,8 @@ import {
   AiFillLinkedin,
 } from 'react-icons/ai';
 
-import {
-  FaGoodreads,
-} from 'react-icons/fa';
+import { ImBooks } from 'react-icons/im';
+import { HiFilm } from 'react-icons/hi';
 
 export default {
   email: 'omar.alashqar@uwaterloo.ca',
@@ -24,13 +23,18 @@ export default {
     },
     {
       tooltip: 'Dribbble',
-      href: 'https://dribbble.com/oalashqar',
+      href: 'https://dribbble.com/omaralashqar',
       icon: AiFillDribbbleCircle,
     },
     {
       tooltip: 'Goodreads',
       href: 'https://www.goodreads.com/omaralashqar',
-      icon: FaGoodreads,
-    }
+      icon: ImBooks,
+    },
+    {
+      tooltip: 'Letterboxd',
+      href: 'https://letterboxd.com/plastic_straw',
+      icon: HiFilm,
+    },
   ],
 };
