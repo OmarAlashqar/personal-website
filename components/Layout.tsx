@@ -10,6 +10,14 @@ interface LayoutProps {
   description: string;
 }
 
+export const getAbsoluteURL = (path: string) => {
+  const baseURL = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : 'http://localhost:3000';
+
+  return baseURL + path;
+};
+
 const Layout: React.FC<LayoutProps> = ({ title, description, ...props }) => (
   <Flex
     direction="column"
@@ -25,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ title, description, ...props }) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
       {/* Open Graph Protocol - https://ogp.me/ */}
-      <meta property="og:image" content={data.imageURL} />
+      <meta property="og:image" content={getAbsoluteURL(data.imageURL)} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
     </Head>
