@@ -25,9 +25,9 @@ const Layout: React.FC<LayoutProps> = ({ title, description, ...props }) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
       {/* Open Graph Protocol - https://ogp.me/ */}
-      <meta property="og:image" content={data.imageURL} key="ogimage" />
-      <meta property="og:title" content={title} key="ogimage" />
-      <meta property="og:description" content={description} key="ogimage" />
+      <meta property="og:image" content={data.imageURL} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
     </Head>
     <Header />
     {props.children}
