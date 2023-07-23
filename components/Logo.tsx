@@ -8,7 +8,7 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({
-  fill = customTheme.colors.primary[500],
+  fill = customTheme.colors.primary[700],
   ...props
 }) => (
   <Icon viewBox="0 0 128 128" w="100%" h="100%" {...props}>

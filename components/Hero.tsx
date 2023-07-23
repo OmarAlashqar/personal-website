@@ -29,6 +29,10 @@ const HeroButton: React.FC = ({ children }) => (
     px="4"
     lineHeight="1"
     size="md"
+    bg="primary.700"
+    _hover={{
+      bg: 'primary.600',
+    }}
   >
     {children}
   </Button>
@@ -59,7 +63,7 @@ const Hero: React.FC<HeroProps> = ({
         as="h1"
         size="xl"
         fontWeight="bold"
-        color="primary.800"
+        color="primary.700"
         textAlign={['center', 'center', 'left', 'left']}
       >
         {title}
@@ -68,7 +72,7 @@ const Hero: React.FC<HeroProps> = ({
       <Heading
         as="h2"
         size="md"
-        color="primary.800"
+        color="primary.700"
         opacity="0.8"
         fontWeight="normal"
         lineHeight={1.5}

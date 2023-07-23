@@ -30,7 +30,7 @@ const Header: React.FC = (props) => (
             size="sm"
             rounded="md"
             color="white"
-            bg="primary.500"
+            bg="primary.700"
             _hover={{
               bg: 'primary.600',
             }}
