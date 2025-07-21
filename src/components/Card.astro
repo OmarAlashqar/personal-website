@@ -1,48 +1,48 @@
 ---
 const {
-    name,
-    position,
-    resumeLink,
-    profileImage,
-    email,
-    linkedin,
-    github,
-    dribbble,
-    goodreads,
-    letterboxd,
+  name,
+  subtitle,
+  resumeLink,
+  profileImage,
+  email,
+  linkedin,
+  github,
+  dribbble,
+  goodreads,
+  letterboxd,
 } = Astro.props;
 
 import "../styles/card.scss";
 ---
 
 <div class="container">
-    <div class="card-container">
-        <div class="content">
-            <div class="image">
-                <img src={profileImage} alt="Profile picture" />
-            </div>
+  <div class="card-container">
+    <div class="content">
+      <div class="image">
+        <img src={profileImage} alt="Profile picture" />
+      </div>
 
-            <div class="description">
-                <h1>{name}</h1>
-                <h2>{position}</h2>
-                <slot />
-            </div>
-        </div>
-
-        <div class="links">
-            <a href={resumeLink} class="button" target="_blank">Résumé</a>
-            <a href={`mailto:${email}`} class="hover-text" target="_blank">
-                <span class="tooltip-text" id="fade"> Email </span>
-                <i class="bi bi-envelope-at"></i>
-            </a>
-            <a href={github} class="hover-text" target="_blank">
-                <span class="tooltip-text" id="fade">GitHub</span>
-                <i class="bi bi-github"></i>
-            </a>
-            <a href={linkedin} class="hover-text" target="_blank">
-                <span class="tooltip-text" id="fade">LinkedIn</span>
-                <i class="bi bi-linkedin"></i>
-            </a>
-        </div>
+      <div class="description">
+        <h1>{name}</h1>
+        {subtitle ? <h2>{subtitle}</h2> : <br />}
+        <slot />
+      </div>
     </div>
+
+    <div class="links">
+      <a href={resumeLink} class="button" target="_blank">Résumé</a>
+      <a href={`mailto:${email}`} class="hover-text" target="_blank">
+        <span class="tooltip-text" id="fade"> Email </span>
+        <i class="bi bi-envelope-at"></i>
+      </a>
+      <a href={github} class="hover-text" target="_blank">
+        <span class="tooltip-text" id="fade">GitHub</span>
+        <i class="bi bi-github"></i>
+      </a>
+      <a href={linkedin} class="hover-text" target="_blank">
+        <span class="tooltip-text" id="fade">LinkedIn</span>
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  </div>
 </div>
